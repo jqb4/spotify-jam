@@ -1,6 +1,6 @@
 ## About it
 *This website simply shows what I'm listening to on Spotify through Lanyard API*<br>
-*When the website says "offline :(" I'm probably don't have Discord or Spotify turned on. Or I'm on my phone.*
+*When the website says "offline :(" I probably don't have Discord or Spotify turned on. Or I'm on my phone.*
 
 ## Functionality
 *I'm using [ColorThief](https://github.com/lokesh/color-thief) v. 2.6.0 library which takes two dominant colors from the song's cover art and applies it as a gradient*<br>
