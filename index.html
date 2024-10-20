@@ -15,11 +15,32 @@
       <a id="albumArtLink" href="#" target="_blank">
         <img id="albumArt" alt="Album Art" style="display:none;" />
       </a>
-      <div class="separator"></div>
-      <p id="activity">thinking...</p>
+        <div class="separator"></div>
+          <p id="activity">thinking...</p>
+        </div>
+
+    <div class="icon-container">
+        <img src="lightbulb.svg" alt="info-icon" class="info-icon">
     </div>
 
+<div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <span class="close-button" onclick="closePopup()">×</span>
+        <h2>Pop-up okno</h2>
+        <p>Zde může být nějaký text nebo obsah pop-up okna.</p>
+    </div>
+</div>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.6.0/color-thief.umd.js"></script>
   <script src="lanyard.js"></script>
+  <script>
+    document.querySelector('.icon-container').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'flex';
+    });
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
